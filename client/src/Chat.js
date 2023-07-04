@@ -3,8 +3,8 @@ import { io } from 'socket.io-client';
 
 import { Message } from './Message';
 
-const socket = io(process.env.REACT_APP_API_URL, {
-  path: process.env.REACT_APP_SOCKET_PATH,
+const socket = io("http://192.168.8.114:8000/", {
+  path: "/sockets",
 });
 
 export const Chat = () => {
